@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 회원가입 페이지 -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static',filename='static/assets/images/favicon.png')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='assets/node_modules/bootstrap/css/bootstrap.min.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static',filename='assets/node_modules/perfect-scrollbar/css/perfect-scrollbar.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static',filename='assets/node_modules/morrisjs/morris.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static',filename='assets/node_modules/c3-master/c3.min.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static',filename='html/css/style.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static',filename='html/css/pages/dashboard1.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static',filename='html/css/colors/default.css') }}"/>
+
+</head>
+
+<main class="fix-header fix-sidebar card-no-border">
+
+    <main id="main-wrapper">
+
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+        <br>
+        <div class="container-fluid">
+        <div class="col-lg-5" style="margin: auto">
+            <div class="content-section">
+                <form method="POST" action="">
+                    {{ form.hidden_tag() }}
+                    <fieldset class="form-group">
+                        <legend class="border-bottom mb-4">Join Today</legend>
+                        <div class="form-group">
+                            {{ form.name.label(class="form-control-label") }}
+                            {% if form.name.errors %}
+                                {{ form.name(class="form-control form-control-lg is-invalid") }}
+                                <div class="invalid-feedback">
+                                    {% for error in form.name.errors %}
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ form.name(class="form-control form-control-lg") }}
+                            {% endif %}
+                        </div>
+                        <div class="form-group">
+                            {{ form.email.label(class="form-control-label") }}
+                            {% if form.email.errors %}
+                                {{ form.email(class="form-control form-control-lg is-invalid") }}
+                                <div class="invalid-feedback">
+                                    {% for error in form.email.errors %}
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ form.email(class="form-control form-control-lg") }}
+                            {% endif %}
+                        </div>
+                        <div class="form-group">
+                            {{ form.password.label(class="form-control-label") }}
+                            {% if form.password.errors %}
+                                {{ form.password(class="form-control form-control-lg is-invalid") }}
+                                <div class="invalid-feedback">
+                                    {% for error in form.password.errors %}
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ form.password(class="form-control form-control-lg") }}
+                            {% endif %}
+                        </div>
+                        <div class="form-group">
+                            {{ form.confirm_password.label(class="form-control-label") }}
+                            {% if form.confirm_password.errors %}
+                                {{ form.confirm_password(class="form-control form-control-lg is-invalid") }}
+                                <div class="invalid-feedback">
+                                    {% for error in form.confirm_password.errors %}
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ form.confirm_password(class="form-control form-control-lg") }}
+                            {% endif %}
+                        </div>
+                    </fieldset>
+                    <div class="form-group">
+                        {{ form.submit(class="btn btn-outline-info") }}
+                    </div>
+                </form>
+            </div>
+            <div class="border-top pt-3">
+                <small class="text-muted">
+                    Already Have An Account? <a class="ml-2" href={{ url_for('login') }}>Sign In</a>
+                </small>
+            </div>
+        </div>
+    </div>
+        </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    </main>
+     <script src="{{url_for('static', filename='assets/node_modules/jquery/jquery.min.js')}}" ></script>
+     <script src="{{url_for('static', filename='assets/node_modules/bootstrap/js/popper.min.js')}}" ></script>
+     <script src="{{url_for('static', filename='assets/node_modules/bootstrap/js/bootstrap.min.js')}}" ></script>
+     <script src="{{url_for('static', filename='html/js/perfect-scrollbar.jquery.min.js')}}" ></script>
+     <script src="{{url_for('static', filename='html/js/waves.js')}}" ></script>
+     <script src="{{url_for('static', filename='html/js/sidebarmenu.js')}}" ></script>
+     <script src="{{url_for('static', filename='html/js/custom.min.js')}}" ></script>
+     <script src="{{url_for('static', filename='assets/node_modules/raphael/raphael-min.js')}}" ></script>
+     <script src="{{url_for('static', filename='assets/node_modules/morrisjs/morris.min.js')}}" ></script>
+     <script src="{{url_for('static', filename='assets/node_modules/d3/d3.min.js')}}" ></script>
+     <script src="{{url_for('static', filename='assets/node_modules/c3-master/c3.min.js')}}" ></script>
+     <script src="{{url_for('static', filename='html/js/dashboard1.js')}}" ></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</main>
+</html>

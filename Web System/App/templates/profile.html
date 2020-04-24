@@ -1,0 +1,37 @@
+{% extends "index.html" %}
+{% block content %}
+<!-- 프로필 페이지 -->
+        <div class="view">
+
+          <!--Video source-->
+          <video class="video-intro" autoplay loop muted>
+            <source src="https://mdbootstrap.com/img/video/city.mp4" type="video/mp4" >
+          </video>
+
+            <!--여기에 로그인 박스 넣기 -->
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+              <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>Developer Profile</strong>
+              </h1>
+
+              <p>
+                <strong>Park Hoijai （朴会宰）</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong>Student ID : 18309002<br>Nationality : S.Korea （韩国）<br>Supervisor : Dr. Li Yu （李宇）</strong>
+              </p>
+                <div class="col-12">
+                        <div class="card card-body mailbox">
+                                <img style="width: 100%; height: 50%;object-fit: contain;" src="../static/img/park.jpg">
+                        </div>
+                </div>
+            </div>
+            <!-- Content -->
+          </div>
+        </div>
+
+{% endblock content %}

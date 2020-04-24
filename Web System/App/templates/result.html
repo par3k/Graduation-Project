@@ -1,0 +1,36 @@
+<!-- 감정분석 페이지 -->
+{% extends "community.html" %}
+{% block content %}
+    <!-- Navbar Right Side -->
+        <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav">
+              {% if current_user.is_authenticated %}
+                <a class="nav-item nav-link" href="">{{ current_user.name }}</a>
+                <a class="nav-item nav-link" href="{{ url_for('logout') }}">Logout</a>
+              {% else %}
+                <a class="nav-item nav-link" href="{{ url_for('login') }}">Login</a>
+                <a class="nav-item nav-link" href="{{ url_for('register') }}">Register</a>
+              {% endif %}
+            </div>
+        </div>
+      </nav>
+    </header>
+    <main role="main" class="container">
+        <div class="content-section col-md-12">
+            <p style="font-size:20pt;text-align: center;"><b>Results for Comment : </b></p>
+            <br>
+                <div class="results" style="text-align: center">
+                    {% if prediction == 1%}
+                    <h2 style="color:red;font-size:18pt"> ***** Positive *****</h2>
+                        <br><h2 style="color:red;font-size:10pt"> 긍정 (肯定)</h2>
+                    {% elif prediction == 0%}
+                    <h2 style="color:blue;font-size:18pt"> ***** Negative *****</h2>
+                        <br><h2 style="color:blue;font-size:10pt"> 부정 (否定)</h2>
+                    {% endif %}
+                </div>
+            <br>
+
+        </div>
+    </main>
+
+{% endblock content %}

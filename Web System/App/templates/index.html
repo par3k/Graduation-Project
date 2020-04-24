@@ -1,0 +1,254 @@
+<!-- 메인페이지 -->
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap core CSS -->
+        <link href="{{url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="{{url_for('static', filename='css/mdb.min.css')}}" rel="stylesheet">
+        <!-- Your custom styles (optional) -->
+        <link href="{{url_for('static', filename='css/style.min.css')}}" rel="stylesheet">
+        <!-- 나눔 바른 고딕 웹 폰트 적용하기 -->
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css">
+        <style type="text/css">
+
+        html,
+        body,
+        header,
+        .carousel {
+          height: 100%;
+        }
+
+        @media (min-width: 800px) and (max-width: 850px) {
+                .navbar:not(.top-nav-collapse) {
+                    background: #1C2331!important;
+                }
+            }
+
+        .hangul {
+            font-family: 'Nanum Barun Gothic' !important;
+        }
+
+      </style>
+        {% if title %}
+            <title>NLP - {{ title }}</title>
+        {% else %}
+            <title>BJTU 2020 Graduation Project</title>
+        {% endif %}
+    </head>
+
+    <body>
+      <!-- Navbar -->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+        <div class="container">
+
+          <!-- Brand -->
+          <a class="navbar-brand" href="/home" aria-expanded="false">
+            <strong>Graduation Project</strong>
+          </a>
+
+          <!-- Collapse -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Links -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <!-- Left -->
+            <ul class="navbar-nav mr-auto">
+
+            </ul>
+
+            <!-- Right -->
+            <ul class="navbar-nav nav-flex-icons">
+                  {% if current_user.is_authenticated %}
+                      <li class="nav-item">
+                        <a class="nav-link border border-light rounded">{{ current_user.name }}</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link waves-effect waves-dark " href="/logout">Logout</a>
+                      </li>
+                  {% else %}
+                      <li class="nav-item">
+                        <a class="nav-link border border-light rounded" href="/login">Log in</a>
+                      </li>
+                  {% endif %}
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+      </nav>
+      <!-- Navbar -->
+
+
+      <!--Carousel Wrapper-->
+      <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+    {% block content %}
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+          <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+        </ol>
+        <!--/.Indicators-->
+
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+
+          <!--First slide-->
+          <div class="carousel-item active">
+            <div class="view">
+
+              <!--Video source-->
+              <video class="video-intro" autoplay loop muted>
+                <source src="https://mdbootstrap.com/img/video/city.mp4" type="video/mp4" >
+              </video>
+
+              <!-- Mask & flexbox options-->
+              <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+                <!-- Content -->
+                <div class="text-center white-text mx-5 wow fadeIn">
+                  <h1 class="mb-4">
+                    <strong>Beijing Jiaotong University</strong>
+                  </h1>
+
+                  <p class="mb-4 d-none d-md-block">
+                      <strong>Software Engineering School</br>2020 Graduation Project</br>북경교통대 소프트웨어공학부 졸업프로젝트</strong>
+                  </p>
+                  <a href="/profile" class="btn btn-outline-white btn-lg">Developer Profile</a>
+                </div>
+                <!-- Content -->
+
+              </div>
+              <!-- Mask & flexbox options-->
+
+            </div>
+          </div>
+          <!--/First slide-->
+
+          <!--Second slide-->
+          <div class="carousel-item">
+            <div class="view">
+
+              <!--Video source-->
+              <video class="video-intro" autoplay loop muted>
+                  <source src="https://mdbootstrap.com/img/video/forest.mp4" type="video/mp4">
+              </video>
+
+              <!-- Mask & flexbox options-->
+              <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+                <!-- Content -->
+                <div class="text-center white-text mx-5 wow fadeIn">
+                  <h1 class="mb-4">
+                    <strong>Category Classification</strong>
+                  </h1>
+
+
+                  <p class="mb-4 d-none d-md-block">
+                    <strong>If you write some text on the board,
+                        </br>System learned with 150K words automatically categorizes it.
+                        </br>15만개의 네이버 뉴스 텍스트 파일을 이용한 뉴스 카테고리 분류 시스템.
+                    </strong>
+                  </p>
+
+                  <a href="/post" class="btn btn-outline-white btn-lg">Check the function
+
+                  </a>
+                </div>
+                <!-- Content -->
+
+              </div>
+              <!-- Mask & flexbox options-->
+
+            </div>
+          </div>
+          <!--/Second slide-->
+
+          <!--Third slide-->
+          <div class="carousel-item">
+            <div class="view">
+
+              <!--Video source-->
+              <video class="video-intro" autoplay loop muted>
+                  <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4">
+              </video>
+
+              <!-- Mask & flexbox options-->
+              <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+                <!-- Content -->
+                  <div class="text-center white-text mx-5 wow fadeIn">
+                  <h1 class="mb-4">
+                    <strong>Sentimental Analysis</strong>
+                  </h1>
+
+
+                  <p class="mb-4 d-none d-md-block">
+                      Based on 150K Korean corpus from social network when you write some comment,
+                      </br>Evaluate Negative or Positive sentence based on your comment.
+                      </br>네이버 영화페이지 사용자 댓글을 이용하여 문장 문맥의 감정 즉,긍/부정을 분석한다.</strong>
+                  </p>
+
+                  <a href="/sentimental" class="btn btn-outline-white btn-lg">Check the function
+
+                  </a>
+                </div>
+           <!-- Content -->
+
+              </div>
+              <!-- Mask & flexbox options-->
+
+            </div>
+          </div>
+          <!--/Third slide-->
+
+        </div>
+        <!--/.Slides-->
+
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+
+    {% endblock %}
+      <!-- SCRIPTS -->
+      <!-- JQuery -->
+      <script type="text/javascript" src="{{url_for('static', filename='js/jquery-3.3.1.min.js')}}"></script>
+      <!-- Bootstrap tooltips -->
+      <script type="text/javascript" src="{{url_for('static', filename='js/popper.min.js')}}"></script>
+      <!-- Bootstrap core JavaScript -->
+      <script type="text/javascript" src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+      <!-- MDB core JavaScript -->
+      <script type="text/javascript" src="{{url_for('static', filename='js/mdb.min.js')}}"></script>
+      <!-- Initializations -->
+      <script type="text/javascript">
+        // Animations initialization
+        new WOW().init();
+      </script>
+      </div>
+    </body>
+</html>
+
+

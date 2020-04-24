@@ -1,0 +1,2 @@
+model_checkpoint_path: "/content/gdrive/My Drive/Colab Notebooks/GraduationProject/Bi_LSTM/BiLSTM_model_Epoch_13.ckpt"
+all_model_checkpoint_paths: "/content/gdrive/My Drive/Colab Notebooks/GraduationProject/Bi_LSTM/BiLSTM_model_Epoch_13.ckpt"
