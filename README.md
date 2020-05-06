@@ -69,24 +69,30 @@ When you click the button, we can check the football league category classificat
 </br>
 ![lc](https://github.com/par3k/Graduation/blob/master/img/4.%20league_classifier.png)
 </br>
+</br>
 You can check the result, when i wrote about Hueng-min Son and Tottenham,
+</br>
 </br>
 they show "EPL" about 98% accuracy.
 </br>
 </br>
 ![lc2](https://github.com/par3k/Graduation/blob/master/img/5.%20league_classifier_result.png)
 </br>
+</br>
 3.Comment sentimental analysis function page
 </br>
 </br>
 ![main3](https://github.com/par3k/Graduation/blob/master/img/6.%20main3.png)
+</br>
 </br>
 When you click the button, we can check the =sentimental analysis function
 </br>
 </br>
 ![sa](https://github.com/par3k/Graduation/blob/master/img/7.%20sentimental_analysis.png)
 </br>
+</br>
 You can check the result, when i wrote about Positive one,
+</br>
 </br>
 they show "Positive" about 96% accuracy.
 ![sa2](https://github.com/par3k/Graduation/blob/master/img/8.%20sentimental_analysis_result.png)
