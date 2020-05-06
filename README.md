@@ -84,7 +84,6 @@ they show "EPL" about 98% accuracy.
 </br>
 ![main3](https://github.com/par3k/Graduation/blob/master/img/6.%20main3.png)
 </br>
-</br>
 When you click the button, we can check the =sentimental analysis function
 </br>
 </br>
