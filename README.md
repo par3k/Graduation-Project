@@ -94,5 +94,8 @@ You can check the result, when i wrote about Positive one,
 </br>
 </br>
 they show "Positive" about 96% accuracy.
+</br>
+</br>
 ![sa2](https://github.com/par3k/Graduation/blob/master/img/8.%20sentimental_analysis_result.png)
+</br>
 </br>
