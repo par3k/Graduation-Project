@@ -16,7 +16,7 @@ PARK HOIJAI 18309002
 * Python 3.7
 </br>
 </br>
-
+## Introduction of my project
 ## 0.Sturcture of the Entire project
 ![strc](https://github.com/par3k/Graduation/blob/master/img/structure%20of%20the%20entire%20system.png)
 </br>
