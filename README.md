@@ -17,11 +17,13 @@ Software engineering
 * PyCharm 2019.3.2
 * Python 3.7
 </br>
-</br>
-I do not share datasets due to copyright issues.
+
 # Introduction of the project
 
 ## 0. Sturcture of the Entire project
+</br>
+I do not share datasets due to copyright issues.
+</br>
 ![strc](https://github.com/par3k/Graduation/blob/master/img/structure%20of%20the%20entire%20system.png)
 </br>
 ## 1. League Category classification
