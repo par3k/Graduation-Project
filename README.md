@@ -35,7 +35,7 @@ and here is a Wordcloud based on the datasets from Naver sports news headlines
 </br>
 There is a map after the word embedding using Word2Vec
 </br>
-![lcc3](https://github.com/par3k/Graduation/blob/master/img/%EA%B0%90%EC%A0%95%EB%B6%84%EC%84%9D%20%EC%A7%80%EB%8F%84.png)
+![lcc3](https://github.com/par3k/Graduation/blob/master/img/%EC%B6%95%EA%B5%AC%EB%A6%AC%EA%B7%B8%20%EC%A7%80%EB%8F%84.png)
 </br>
 ## 2. Sentimental Analysis
 The dataset had been labeled like this,</br>
