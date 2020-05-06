@@ -1,7 +1,7 @@
 # 2020 BJTU Graduation Project
 PARK HOIJAI 18309002
-Department of the Software Engineering
-Beijing Jiaotong University
+</br>Department of the Software Engineering
+</br>Beijing Jiaotong University
 
 ## Development Version
 * Flask --1.1.1
