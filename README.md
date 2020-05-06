@@ -21,7 +21,7 @@ Software engineering
 # Introduction of the project
 
 ## 0. Sturcture of the Entire project
-I do not share datasets due to copyright issues.
+I do not share datasets due to copyright.
 </br>
 ![strc](https://github.com/par3k/Graduation/blob/master/img/structure%20of%20the%20entire%20system.png)
 </br>
