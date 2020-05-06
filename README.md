@@ -50,7 +50,7 @@ There is a map after the word embedding using Word2Vec
 ![sa3](https://github.com/par3k/Graduation/blob/master/img/%EA%B0%90%EC%A0%95%EB%B6%84%EC%84%9D%20%EC%A7%80%EB%8F%84.png)
 </br>
 ## 3. Result of Train (by Bi_LSTM)
-There is a accuracy after training (Epochs = 10)
+There is a accuracy after training (Epochs = 13)
 </br> there show pretty higher than i expect. almost over 92% both of them.
 </br>
 ![acc](https://github.com/par3k/Graduation/blob/master/img/accuracy.png)
