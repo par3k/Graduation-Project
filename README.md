@@ -11,7 +11,7 @@ PARK HOIJAI 18309002
 * gensim --3.8.1
 
 # Development Tool
-* Google Colab https://colab.research.google.com/
+* Google Colab Pro https://colab.research.google.com/
 * PyCharm 2019.3.2
 * Python 3.7
 </br>
