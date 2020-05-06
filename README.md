@@ -17,10 +17,10 @@ PARK HOIJAI 18309002
 </br>
 </br>
 ## Introduction of my project
-## 0.Sturcture of the Entire project
+# 0.Sturcture of the Entire project
 ![strc](https://github.com/par3k/Graduation/blob/master/img/structure%20of%20the%20entire%20system.png)
 </br>
-## 1.League Category classification
+# 1.League Category classification
 The dataset had been labeled like this,</br>
 ![lcc1](https://github.com/par3k/Graduation/blob/master/img/%EC%B6%95%EA%B5%AC%EB%A6%AC%EA%B7%B8%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EB%A5%98.png)
 </br>
@@ -32,7 +32,7 @@ There is a map after the word embedding using Word2Vec
 </br>
 ![lcc3](https://github.com/par3k/Graduation/blob/master/img/%EA%B0%90%EC%A0%95%EB%B6%84%EC%84%9D%20%EC%A7%80%EB%8F%84.png)
 </br>
-## 2. Sentimental Analysis
+# 2. Sentimental Analysis
 The dataset had been labeled like this,</br>
 ![sa_1](https://github.com/par3k/Graduation/blob/master/img/%EA%B0%90%EC%A0%95%EB%B6%84%EC%84%9D%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EB%A5%98.png)
 </br>
@@ -44,13 +44,13 @@ There is a map after the word embedding using Word2Vec
 </br>
 ![sa3](https://github.com/par3k/Graduation/blob/master/img/%EA%B0%90%EC%A0%95%EB%B6%84%EC%84%9D%20%EC%A7%80%EB%8F%84.png)
 </br>
-## 3.Result of Train (by Bi_LSTM)
+# 3.Result of Train (by Bi_LSTM)
 There is a accuracy after training (Epochs = 10)
 </br> there show pretty higher than i expect. almost over 92% both of them.
 </br>
 ![acc](https://github.com/par3k/Graduation/blob/master/img/accuracy.png)
 </br>
-## 4.Implement the Web System
+# 4.Implement the Web System
 1.Main page
 </br>
 ![main1](https://github.com/par3k/Graduation/blob/master/img/1.%20main.png)
