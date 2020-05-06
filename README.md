@@ -78,7 +78,7 @@ When you click the button, we can check the football league category classificat
 You can check the result, when i wrote about Hueng-min Son and Tottenham,
 </br>
 </br>
-they said this sentence is "EPL" about 98%.
+they said this sentence league category is "EPL" about 98%.
 </br>
 </br>
 ![lc2](https://github.com/par3k/Graduation/blob/master/img/5.%20league_classifier_result.png)
@@ -98,7 +98,7 @@ When you click the button, we can check the =sentimental analysis function
 You can check the result, when i wrote about Positive one,
 </br>
 </br>
-they said this sentence is "Positive" about 96%.
+they said the emotion of this sentence writter is "Positive" about 96%.
 </br>
 </br>
 ![sa2](https://github.com/par3k/Graduation/blob/master/img/8.%20sentimental_analysis_result.png)
