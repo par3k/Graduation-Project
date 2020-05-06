@@ -1,7 +1,9 @@
-## 2020 BJTU Graduation Project
+# 2020 BJTU Graduation Project
 PARK HOIJAI 18309002
-</br>Department of the Software Engineering
-</br>Beijing Jiaotong University
+</br>
+Beijing Jiaotong University
+</br>
+Software engineering
 
 # Development Version
 * Flask --1.1.1
@@ -17,7 +19,7 @@ PARK HOIJAI 18309002
 </br>
 </br>
 
-# Introduction of my project
+# Introduction of the project
 
 ## 0.Sturcture of the Entire project
 ![strc](https://github.com/par3k/Graduation/blob/master/img/structure%20of%20the%20entire%20system.png)
