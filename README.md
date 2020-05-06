@@ -61,9 +61,11 @@ When you click the button, we can see the developer's info.
 </br>
 2.Football league category classification function page
 </br>
+</br>
 ![main2](https://github.com/par3k/Graduation/blob/master/img/3.%20main2.png)
 </br>
 When you click the button, we can check the football league category classification function
+</br>
 </br>
 ![lc](https://github.com/par3k/Graduation/blob/master/img/4.%20league_classifier.png)
 </br>
@@ -71,13 +73,16 @@ You can check the result, when i wrote about Hueng-min Son and Tottenham,
 </br>
 they show "EPL" about 98% accuracy.
 </br>
+</br>
 ![lc2](https://github.com/par3k/Graduation/blob/master/img/5.%20league_classifier_result.png)
 </br>
 3.Comment sentimental analysis function page
 </br>
+</br>
 ![main3](https://github.com/par3k/Graduation/blob/master/img/6.%20main3.png)
 </br>
 When you click the button, we can check the =sentimental analysis function
+</br>
 </br>
 ![sa](https://github.com/par3k/Graduation/blob/master/img/7.%20sentimental_analysis.png)
 </br>
