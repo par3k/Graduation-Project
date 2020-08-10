@@ -1,9 +1,15 @@
 # 2020 BJTU Graduation Project
-PARK HOIJAI 18309002
-</br>
-Beijing Jiaotong University
-</br>
-Software engineering
+PARK HOIJAI 18309002</br>
+Beijing Jiaotong University</br>
+Software engineering</br></br>
+
+자연어 처리를 이용한 유저의 감정 분석 및 내용 기반 카테고리 분류 웹 시스템입니다.</br>
+시스템 언어는 전부 Python으로 이루어져 있고, 네이버 무비 및 네이버 스포츠 그리고 네이버 포털 검색에서</br>
+학습에 필요한 데이터셋을 크롤링 하였습니다.</br></br>
+양방향 LSTM을 데이터 학습 모델로 선정하여, 감성분석 및 카테고리 분류 모델을 각각 따로 제작하였으며</br>
+두 모델은 92%이상의 높은 정확도를 보였습니다.</br>
+파이썬 플라스크 웹 프레임워크를 이용, 학습 내용을 바탕으로 연산처리 결과를</br>
+실시간으로 서빙하여 웹 페이지에 보여주었습니다.</br>
 
 ## Development Version
 * Flask --1.1.1
