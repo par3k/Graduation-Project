@@ -1,5 +1,5 @@
 class Config(object):
-    SECRET_KEY = '608f10b6e0f01d77436fb7226bc46b86'
+    SECRET_KEY = 'your secret key'
     SQLALCHEMY_DATABASE_URI = 'mysql+pymysql:/your sql addr'
     SQLALCHEMY_COMMIT_ON_TEARDOWN = True
     SQLALCHEMY_TRACK_MODIFICATIONS = False
