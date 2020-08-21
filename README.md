@@ -1,9 +1,15 @@
 # 2020 BJTU Graduation Project
-PARK HOIJAI 18309002
-</br>
-Beijing Jiaotong University
-</br>
-Software engineering
+PARK HOIJAI 18309002</br>
+Beijing Jiaotong University</br>
+Software engineering</br></br>
+
+자연어 처리를 이용한 유저의 감정 분석 및 내용 기반 카테고리 분류 웹 시스템입니다.</br>
+시스템 언어는 전부 Python으로 이루어져 있고, 네이버 무비 및 네이버 스포츠 그리고 네이버 포털 검색에서</br>
+학습에 필요한 데이터셋을 크롤링 하였습니다.</br></br>
+양방향 LSTM을 데이터 학습 모델로 선정하여, 감성분석 및 카테고리 분류 모델을 각각 따로 제작하였으며</br>
+두 모델은 92%이상의 높은 정확도를 보였습니다.</br>
+파이썬 플라스크 웹 프레임워크를 이용, 학습 내용을 바탕으로 연산처리 결과를</br>
+실시간으로 서빙하여 웹 페이지에 보여주었습니다.</br>
 
 ## Development Version
 * Flask --1.1.1
@@ -35,7 +41,7 @@ and here is a Wordcloud based on the datasets from Naver sports news headlines
 </br>
 There is a map after the word embedding using Word2Vec
 </br>
-![lcc3](https://github.com/par3k/Graduation/blob/master/img/%EA%B0%90%EC%A0%95%EB%B6%84%EC%84%9D%20%EC%A7%80%EB%8F%84.png)
+![lcc3](https://github.com/par3k/Graduation/blob/master/img/%EC%B6%95%EA%B5%AC%EB%A6%AC%EA%B7%B8%20%EC%A7%80%EB%8F%84.png)
 </br>
 ## 2. Sentimental Analysis
 The dataset had been labeled like this,</br>
@@ -50,7 +56,7 @@ There is a map after the word embedding using Word2Vec
 ![sa3](https://github.com/par3k/Graduation/blob/master/img/%EA%B0%90%EC%A0%95%EB%B6%84%EC%84%9D%20%EC%A7%80%EB%8F%84.png)
 </br>
 ## 3. Result of Train (by Bi_LSTM)
-There is a accuracy after training (Epochs = 10)
+There is a accuracy after training (Epochs = 13)
 </br> there show pretty higher than i expect. almost over 92% both of them.
 </br>
 ![acc](https://github.com/par3k/Graduation/blob/master/img/accuracy.png)
@@ -78,7 +84,7 @@ When you click the button, we can check the football league category classificat
 You can check the result, when i wrote about Hueng-min Son and Tottenham,
 </br>
 </br>
-they show "EPL" about 98% accuracy.
+they said this sentence league category is "EPL" about 98%.
 </br>
 </br>
 ![lc2](https://github.com/par3k/Graduation/blob/master/img/5.%20league_classifier_result.png)
@@ -98,7 +104,7 @@ When you click the button, we can check the =sentimental analysis function
 You can check the result, when i wrote about Positive one,
 </br>
 </br>
-they show "Positive" about 96% accuracy.
+they said the emotion of this sentence writter is "Positive" about 96%.
 </br>
 </br>
 ![sa2](https://github.com/par3k/Graduation/blob/master/img/8.%20sentimental_analysis_result.png)
