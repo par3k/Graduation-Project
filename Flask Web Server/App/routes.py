@@ -209,7 +209,7 @@ def predict():
 
         saver = tf.compat.v1.train.Saver()
         init = tf.compat.v1.global_variables_initializer()
-        modelName = "/Users/alex/Desktop/Flask Web Server/App/model/sentimental/BiLSTM_model_Epoch_13.ckpt"
+        modelName = "/Users/alex/Documents/GitHub/Graduation/Flask Web Server/App/model/sentimental/BiLSTM_model_Epoch_13.ckpt"
 
         sess = tf.compat.v1.Session()
         sess.run(init)
@@ -222,7 +222,7 @@ def predict():
         tokens = tokenize(message)
         print(tokens)
 
-        embedding = Convert2Vec('/Users/alex/Desktop/Flask Web Server/App/model/sentimental/Word2vec.model', tokens)
+        embedding = Convert2Vec('/Users/alex/Documents/GitHub/Graduation/Flask Web Server/App/model/sentimental/Word2vec.model', tokens)
         # embedding = Convert2Vec('/Users/alex/Desktop/Flask Web Server/App/model/old/Word2vec.model', tokens) # 제작 자가 만든 모델
 
         zero_pad = Zero_padding(embedding, Batch_size, Maxseq_length, Vector_size)
@@ -298,7 +298,7 @@ def create_post():
 
         saver2 = tf.compat.v1.train.Saver()
         init2 = tf.compat.v1.global_variables_initializer()
-        modelName2 = "/Users/alex/Desktop/Flask Web Server/App/model/category/BiLSTM.model"
+        modelName2 = "/Users/alex/Documents/GitHub/Graduation/Flask Web Server/App/model/category/BiLSTM.model"
 
         sess2 = tf.compat.v1.Session()
         sess2.run(init2)
@@ -311,7 +311,7 @@ def create_post():
         tokens = tokenize(message)
         print(tokens)
 
-        embedding2 = Convert2Vec('/Users/alex/Desktop/Flask Web Server/App/model/category/league_category.embedding', tokens)
+        embedding2 = Convert2Vec('/Users/alex/Documents/GitHub/Graduation/Flask Web Server/App/model/category/league_category.embedding', tokens)
         zero_pad = Zero_padding(embedding2, Batch_size, Maxseq_length, Vector_size)
         sess2
         result2 = sess2.run(prediction, feed_dict={X: zero_pad, seq_len: [len(tokens)]})  # tf.argmax(prediction, 1)이 여러 prediction 값중 max 값 1개만 가져옴
