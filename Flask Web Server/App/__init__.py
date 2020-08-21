@@ -8,8 +8,8 @@ pymysql.install_as_MySQLdb()
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SECRET_KEY'] = '608f10b6e0f01d77436fb7226bc46b86'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://alex:ghlwo7831@13.125.21.190/graduation'
+app.config['SECRET_KEY'] = 'your scret key'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://your sql addr'
 
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
