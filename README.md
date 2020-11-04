@@ -2,7 +2,11 @@
 PARK HOIJAI 18309002</br>
 Beijing Jiaotong University</br>
 Software engineering</br></br>
+
+</br>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/4FSKS5ll_ok" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></br></br>
 * Introduction Video : https://youtu.be/4FSKS5ll_ok</br>
+
 자연어 처리를 이용한 유저의 감정 분석 및 내용 기반 카테고리 분류 웹 시스템입니다.</br>
 시스템 언어는 전부 Python으로 이루어져 있고, 네이버 무비 및 네이버 스포츠 그리고 네이버 포털 검색에서</br>
 학습에 필요한 데이터셋을 크롤링 하였습니다.</br></br>
