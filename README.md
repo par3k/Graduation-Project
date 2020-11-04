@@ -4,7 +4,7 @@ Beijing Jiaotong University</br>
 Software engineering</br></br>
 
 
-* Introduction Video : https://youtu.be/4FSKS5ll_ok
+* 프로젝트 소개 영상 (한국어) : https://youtu.be/4FSKS5ll_ok
 </br>
 </br>
 
