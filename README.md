@@ -6,7 +6,6 @@ Software engineering</br></br>
 
 * 프로젝트 소개 영상 (한국어) : https://youtu.be/4FSKS5ll_ok
 </br>
-</br>
 
 자연어 처리를 이용한 유저의 감정 분석 및 내용 기반 카테고리 분류 웹 시스템입니다.</br>
 시스템 언어는 전부 Python으로 이루어져 있고, 네이버 무비 및 네이버 스포츠 그리고 네이버 포털 검색에서</br>
