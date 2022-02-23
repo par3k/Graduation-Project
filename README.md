@@ -1,8 +1,14 @@
 # 2020 BJTU Graduation Project
 PARK HOIJAI 18309002</br>
 Beijing Jiaotong University</br>
-Software engineering</br></br>
+Software engineering</br>
+Mentor : Associate Prof. Mr.Li Yu</br>
 
+This project is my Graduation Project in BJTU, 2019/12 - 2020/05.
+</br>
+The project subject is User comment sentimental Analysis in Football League Community page using Bi_LSTM
+</br>
+</br>
 
 * 프로젝트 소개 영상 (한국어) : https://youtu.be/4FSKS5ll_ok
 </br>
